@@ -6,13 +6,5 @@ body {
     width: 200px;
     height: 200px;
     background-color: yellow;
-    transition-property: transform, background-color;
-    transition-duration: 2s, 0.5s;
-    transition-delay: 0.3s;
-    transition-timing-function: ease-in-out, linear;
-}
-
-.square:hover {
-    transform: rotate(45deg);
-    background-color: lightcoral;
+    transition: transform 0.5s ease-in-out, background-color 0.5s;
 }
