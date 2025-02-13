@@ -1,0 +1,16 @@
+body {
+    background-color: #222222;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-image:linear-gradient(blue, yellow); 
+    transition: all 2s;
+    transition-behavior: allow-discrete;
+}
+
+.square:hover{
+    background-image:linear-gradient(green, yellow); 
+    transform: translateX(100px);
+}
