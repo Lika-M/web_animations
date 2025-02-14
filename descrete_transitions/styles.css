@@ -2,15 +2,30 @@ body {
     background-color: #222222;
 }
 
-.square {
-    width: 200px;
-    height: 200px;
-    background-image:linear-gradient(blue, yellow); 
-    transition: all 2s;
-    transition-behavior: allow-discrete;
+@starting-style {
+    .square {
+        opacity: 0;
+    }
 }
 
-.square:hover{
-    background-image:linear-gradient(green, yellow); 
-    transform: translateX(100px);
+.square {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(blue, yellow);
+    transition: display 2s allow-discrete, opacity 2s;
+    /* another approach 
+    @starting-style {
+        opacity: 0;
+    }
+    */
+}
+
+.toggleBtn {
+    width: 100px;
+}
+
+.square.hide {
+    display: none;
+    opacity: 0;
 }
